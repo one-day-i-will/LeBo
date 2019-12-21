@@ -1,0 +1,1284 @@
+2019-12-18 21:43:11.878  INFO 5964 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 5964 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 21:43:11.893  INFO 5964 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 21:43:13.672  INFO 5964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 21:43:13.703  INFO 5964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 21:43:13.703  INFO 5964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 21:43:13.812  INFO 5964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 21:43:13.812  INFO 5964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1888 ms
+2019-12-18 21:43:14.904  INFO 5964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 21:43:15.013  INFO 5964 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 21:43:15.450  INFO 5964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 21:43:15.466  INFO 5964 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 4.259 seconds (JVM running for 5.194)
+2019-12-18 21:43:22.134  INFO 848 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 848 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 21:43:22.134  INFO 848 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 21:43:22.992  INFO 848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 21:43:23.007  INFO 848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 21:43:23.007  INFO 848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 21:43:23.101  INFO 848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 21:43:23.101  INFO 848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 889 ms
+2019-12-18 21:43:23.663  INFO 848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 21:43:23.725  INFO 848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 21:43:23.990  INFO 848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 21:43:23.990  INFO 848 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.246 seconds (JVM running for 2.684)
+2019-12-18 21:43:40.931  INFO 848 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 21:43:40.931  INFO 848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 21:43:40.952  INFO 848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-12-18 21:43:41.013  INFO 848 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 21:43:41.017  INFO 848 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 21:43:43.959  INFO 848 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/toLogin', ip='0:0:0:0:0:0:0:1', args=[Users{id=null, code='xian', password='123'}, {users=Users{id=null, code='xian', password='123'}, org.springframework.validation.BindingResult.users=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, org.apache.catalina.session.StandardSessionFacade@a7392fc], classMethod='com.xian.lebo.controller.UserController.login'}
+2019-12-18 21:43:44.420  INFO 848 --- [http-nio-8080-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-18 21:43:44.562 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:44.564 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:45.070 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:45.576 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:46.081 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:46.586 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:47.088 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:47.594 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:48.097 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:48.600 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:49.106 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:49.611 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:50.115 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:50.621 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:51.124 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:51.632 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:52.137 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:52.644 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:53.150 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:53.655 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:54.161 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:54.666 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:55.171 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:55.676 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:56.178 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:56.684 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:57.190 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:57.695 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:58.197 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:58.700 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:59.204 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:43:59.707 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:00.210 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:00.714 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:01.220 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:01.726 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:02.231 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:02.736 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:03.243 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:03.747 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:04.253 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:04.758 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:05.264 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:05.769 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:06.272 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:06.777 ERROR 848 --- [Druid-ConnectionPool-Create-1613172078] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://localhost:3306/lebo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8, errorCode 1045, state 28000
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+
+2019-12-18 21:44:18.850  INFO 5944 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 5944 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 21:44:18.852  INFO 5944 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 21:44:19.767  INFO 5944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 21:44:19.782  INFO 5944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 21:44:19.782  INFO 5944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 21:44:19.843  INFO 5944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 21:44:19.843  INFO 5944 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 923 ms
+2019-12-18 21:44:20.444  INFO 5944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 21:44:20.519  INFO 5944 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 21:44:20.758  INFO 5944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 21:44:20.760  INFO 5944 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.252 seconds (JVM running for 2.686)
+2019-12-18 21:44:21.204  INFO 5944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 21:44:21.204  INFO 5944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 21:44:21.212  INFO 5944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-18 21:44:21.227  INFO 5944 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='127.0.0.1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 21:44:21.230  INFO 5944 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 21:44:23.000  INFO 5944 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/toLogin', ip='127.0.0.1', args=[Users{id=null, code='xian', password='123'}, {users=Users{id=null, code='xian', password='123'}, org.springframework.validation.BindingResult.users=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, org.apache.catalina.session.StandardSessionFacade@4285e141], classMethod='com.xian.lebo.controller.UserController.login'}
+2019-12-18 21:44:23.040  INFO 5944 --- [http-nio-8080-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-18 21:44:23.162  INFO 5944 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:redirect:/student/list
+2019-12-18 21:44:23.175  INFO 5944 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/student/list', ip='127.0.0.1', args=[, 1, 5, {}], classMethod='com.xian.lebo.controller.StudentController.list'}
+2019-12-18 21:44:23.212  INFO 5944 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:index
+2019-12-18 21:44:41.365  INFO 5944 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/student/list', ip='127.0.0.1', args=[, 1, 5, {}], classMethod='com.xian.lebo.controller.StudentController.list'}
+2019-12-18 21:44:41.373  INFO 5944 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:index
+2019-12-18 21:44:57.227  INFO 5944 --- [http-nio-8080-exec-10] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/student/list', ip='0:0:0:0:0:0:0:1', args=[, 1, 5, {}], classMethod='com.xian.lebo.controller.StudentController.list'}
+2019-12-18 21:44:57.237  INFO 5944 --- [http-nio-8080-exec-10] com.xian.lebo.aspect.LoggerAspect        : Result:index
+2019-12-18 21:45:00.102  INFO 5944 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/student/multPage', ip='0:0:0:0:0:0:0:1', args=[{}], classMethod='com.xian.lebo.controller.StudentController.toTestHtml'}
+2019-12-18 21:45:00.119  INFO 5944 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult
+2019-12-18 22:13:15.460  INFO 5724 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 5724 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:13:15.463  INFO 5724 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:13:16.347  INFO 5724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:13:16.362  INFO 5724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:13:16.362  INFO 5724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:13:16.436  INFO 5724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:13:16.436  INFO 5724 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 915 ms
+2019-12-18 22:13:16.986  INFO 5724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:13:17.054  INFO 5724 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:13:17.322  INFO 5724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:13:17.324  INFO 5724 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.276 seconds (JVM running for 2.673)
+2019-12-18 22:13:27.798  INFO 5724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:13:27.799  INFO 5724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:13:27.808  INFO 5724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-12-18 22:13:27.823  INFO 5724 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:13:27.827  INFO 5724 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:14:00.595  INFO 5724 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:14:00.596  INFO 5724 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:15:54.676  INFO 5724 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:15:54.677  INFO 5724 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:15:56.245  INFO 5724 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:15:56.245  INFO 5724 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:15:56.381  INFO 5724 --- [http-nio-8080-exec-5] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:15:56.382  INFO 5724 --- [http-nio-8080-exec-5] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:15:56.390  INFO 5724 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:15:56.390  INFO 5724 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:16:34.767  INFO 5324 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 5324 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:16:34.767  INFO 5324 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:16:35.623  INFO 5324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:16:35.639  INFO 5324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:16:35.639  INFO 5324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:16:35.717  INFO 5324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:16:35.717  INFO 5324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 877 ms
+2019-12-18 22:16:36.247  INFO 5324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:16:36.309  INFO 5324 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:16:36.543  INFO 5324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:16:36.543  INFO 5324 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.121 seconds (JVM running for 2.544)
+2019-12-18 22:16:42.374  INFO 5324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:16:42.374  INFO 5324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:16:42.382  INFO 5324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-12-18 22:16:42.398  INFO 5324 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:16:42.401  INFO 5324 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:16:57.504  INFO 4696 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 4696 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:16:57.504  INFO 4696 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:16:58.379  INFO 4696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:16:58.394  INFO 4696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:16:58.394  INFO 4696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:16:58.457  INFO 4696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:16:58.457  INFO 4696 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 875 ms
+2019-12-18 22:16:58.972  INFO 4696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:16:59.034  INFO 4696 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:16:59.269  INFO 4696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:16:59.269  INFO 4696 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.139 seconds (JVM running for 2.603)
+2019-12-18 22:17:05.894  INFO 4696 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:17:05.895  INFO 4696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:17:05.903  INFO 4696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-12-18 22:17:05.921  INFO 4696 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:17:05.925  INFO 4696 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:18:58.333  INFO 7152 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 7152 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:18:58.336  INFO 7152 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:18:59.203  INFO 7152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:18:59.217  INFO 7152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:18:59.218  INFO 7152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:18:59.280  INFO 7152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:18:59.281  INFO 7152 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 866 ms
+2019-12-18 22:18:59.830  INFO 7152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:18:59.900  INFO 7152 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:19:00.158  INFO 7152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:19:00.160  INFO 7152 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.191 seconds (JVM running for 2.684)
+2019-12-18 22:19:03.834  INFO 7152 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:19:03.835  INFO 7152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:19:03.848  INFO 7152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-18 22:19:03.876  INFO 7152 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:19:03.882  INFO 7152 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:19:15.939  INFO 7152 --- [http-nio-8080-exec-5] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:19:15.939  INFO 7152 --- [http-nio-8080-exec-5] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:19:15.965  INFO 7152 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:19:15.965  INFO 7152 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:19:15.981  INFO 7152 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:19:15.981  INFO 7152 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:20:47.160  INFO 1480 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 1480 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:20:47.160  INFO 1480 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:20:48.051  INFO 1480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:20:48.067  INFO 1480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:20:48.067  INFO 1480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:20:48.129  INFO 1480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:20:48.129  INFO 1480 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 907 ms
+2019-12-18 22:20:48.675  INFO 1480 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:20:48.737  INFO 1480 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:20:48.987  INFO 1480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:20:48.987  INFO 1480 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.17 seconds (JVM running for 2.594)
+2019-12-18 22:20:50.956  INFO 1480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:20:50.956  INFO 1480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:20:50.963  INFO 1480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-18 22:20:50.979  INFO 1480 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:20:50.982  INFO 1480 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:20:51.257  INFO 1480 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:20:51.257  INFO 1480 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:20:51.369  INFO 1480 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:20:51.369  INFO 1480 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:20:51.377  INFO 1480 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:20:51.378  INFO 1480 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:22:56.010  INFO 2152 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 2152 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:22:56.025  INFO 2152 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:22:56.915  INFO 2152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:22:56.930  INFO 2152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:22:56.930  INFO 2152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:22:56.993  INFO 2152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:22:56.993  INFO 2152 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 858 ms
+2019-12-18 22:22:57.554  INFO 2152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:22:57.648  INFO 2152 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:22:57.914  INFO 2152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:22:57.916  INFO 2152 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.281 seconds (JVM running for 2.746)
+2019-12-18 22:22:58.952  INFO 2152 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:22:58.952  INFO 2152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:22:58.960  INFO 2152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-18 22:22:58.975  INFO 2152 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:22:58.978  INFO 2152 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:24:22.211  INFO 6580 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 6580 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:24:22.227  INFO 6580 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:24:23.101  INFO 6580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:24:23.116  INFO 6580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:24:23.116  INFO 6580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:24:23.194  INFO 6580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:24:23.194  INFO 6580 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 905 ms
+2019-12-18 22:24:23.725  INFO 6580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:24:23.787  INFO 6580 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:24:24.052  INFO 6580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:24:24.052  INFO 6580 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.199 seconds (JVM running for 2.601)
+2019-12-18 22:24:28.004  INFO 6580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:24:28.005  INFO 6580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:24:28.014  INFO 6580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-12-18 22:24:28.030  INFO 6580 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:24:28.033  INFO 6580 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:24:32.860  WARN 6580 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2019-12-18 22:24:33.013  INFO 6580 --- [http-nio-8080-exec-5] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:24:33.014  INFO 6580 --- [http-nio-8080-exec-5] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:24:38.368  WARN 6580 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2019-12-18 22:24:38.399  INFO 6580 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:24:38.400  INFO 6580 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:24:54.285  WARN 6580 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2019-12-18 22:24:54.313  INFO 6580 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:24:54.315  INFO 6580 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:31:54.571  INFO 6580 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:31:54.572  INFO 6580 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:31:59.998  WARN 6580 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2019-12-18 22:32:00.033  INFO 6580 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:32:00.033  INFO 6580 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:33:05.063  INFO 5184 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 5184 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:33:05.066  INFO 5184 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:33:06.030  INFO 5184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:33:06.046  INFO 5184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:33:06.047  INFO 5184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:33:06.119  INFO 5184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:33:06.120  INFO 5184 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1025 ms
+2019-12-18 22:33:06.802  INFO 5184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:33:06.888  INFO 5184 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:33:07.189  INFO 5184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:33:07.191  INFO 5184 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.646 seconds (JVM running for 3.152)
+2019-12-18 22:33:11.452  INFO 5184 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:33:11.452  INFO 5184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:33:11.462  INFO 5184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-12-18 22:33:11.483  INFO 5184 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:33:11.487  INFO 5184 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:33:16.528  INFO 5184 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:33:27.950  INFO 5184 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@77d12065, com.xian.lebo.pojo.StudentTest@6b4e4d3a, com.xian.lebo.pojo.StudentTest@4c426d77, com.xian.lebo.pojo.StudentTest@36d21e36]
+2019-12-18 22:38:09.012  INFO 5184 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:38:09.012  INFO 5184 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:38:37.442  INFO 6820 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 6820 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:38:37.444  INFO 6820 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:38:38.339  INFO 6820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:38:38.353  INFO 6820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:38:38.353  INFO 6820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:38:38.414  INFO 6820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:38:38.414  INFO 6820 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 905 ms
+2019-12-18 22:38:38.968  INFO 6820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:38:39.038  INFO 6820 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:38:39.287  INFO 6820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:38:39.289  INFO 6820 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.201 seconds (JVM running for 2.62)
+2019-12-18 22:38:42.879  INFO 6820 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:38:42.879  INFO 6820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:38:42.887  INFO 6820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-18 22:38:42.902  INFO 6820 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:38:42.905  INFO 6820 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:38:46.946  INFO 6820 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:38:46.947  INFO 6820 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@6b1a2a56, com.xian.lebo.pojo.StudentTest@3fba2dae, com.xian.lebo.pojo.StudentTest@5cf1e078, com.xian.lebo.pojo.StudentTest@4d3f0bb6]
+2019-12-18 22:38:46.973  INFO 6820 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:38:46.973  INFO 6820 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:38:46.986  INFO 6820 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:38:46.986  INFO 6820 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:43:31.299  INFO 6956 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 6956 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:43:31.301  INFO 6956 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:43:32.202  INFO 6956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:43:32.216  INFO 6956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:43:32.217  INFO 6956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:43:32.279  INFO 6956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:43:32.279  INFO 6956 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 876 ms
+2019-12-18 22:43:32.859  INFO 6956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:43:32.928  INFO 6956 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:43:33.180  INFO 6956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:43:33.182  INFO 6956 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.284 seconds (JVM running for 2.743)
+2019-12-18 22:43:35.823  INFO 6956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:43:35.824  INFO 6956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:43:35.836  INFO 6956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-12-18 22:43:35.857  INFO 6956 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:43:35.861  INFO 6956 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:43:40.409  INFO 6956 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:43:40.410  INFO 6956 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@4dfbd1ee, com.xian.lebo.pojo.StudentTest@3fc946d8, com.xian.lebo.pojo.StudentTest@7c542042, com.xian.lebo.pojo.StudentTest@29385635]
+2019-12-18 22:44:19.726  INFO 7028 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 7028 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:44:19.729  INFO 7028 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:44:20.648  INFO 7028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:44:20.663  INFO 7028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:44:20.663  INFO 7028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:44:20.728  INFO 7028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:44:20.728  INFO 7028 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 937 ms
+2019-12-18 22:44:21.309  INFO 7028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:44:21.381  INFO 7028 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:44:21.639  INFO 7028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:44:21.641  INFO 7028 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.292 seconds (JVM running for 2.71)
+2019-12-18 22:44:24.358  INFO 7028 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:44:24.359  INFO 7028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:44:24.368  INFO 7028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-12-18 22:44:24.387  INFO 7028 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:44:24.391  INFO 7028 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:44:25.985  INFO 7028 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:44:25.986  INFO 7028 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:44:26.577  INFO 7028 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:44:26.577  INFO 7028 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:44:34.017  INFO 7028 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:44:34.018  INFO 7028 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:44:41.849  INFO 7028 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:44:41.849  INFO 7028 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@6ec25658, com.xian.lebo.pojo.StudentTest@23395cf0, com.xian.lebo.pojo.StudentTest@379dc454, com.xian.lebo.pojo.StudentTest@39396ae3]
+2019-12-18 22:44:43.604  INFO 7028 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:44:43.605  INFO 7028 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:44:43.624  INFO 7028 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:44:43.624  INFO 7028 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:45:48.942  INFO 5612 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 5612 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:45:48.942  INFO 5612 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:45:49.832  INFO 5612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:45:49.848  INFO 5612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:45:49.863  INFO 5612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:45:49.926  INFO 5612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:45:49.926  INFO 5612 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 906 ms
+2019-12-18 22:45:50.472  INFO 5612 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:45:50.534  INFO 5612 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:45:50.784  INFO 5612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:45:50.784  INFO 5612 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.216 seconds (JVM running for 2.615)
+2019-12-18 22:45:54.750  INFO 5612 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:45:54.750  INFO 5612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:45:54.759  INFO 5612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-12-18 22:45:54.779  INFO 5612 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:45:54.782  INFO 5612 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:45:57.843  INFO 5612 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:45:57.844  INFO 5612 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@342b5c8f, com.xian.lebo.pojo.StudentTest@1dd0b8d2, com.xian.lebo.pojo.StudentTest@5c90a32c, com.xian.lebo.pojo.StudentTest@a38d2a6]
+2019-12-18 22:47:06.097  INFO 7056 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 7056 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:47:06.099  INFO 7056 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:47:07.025  INFO 7056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:47:07.041  INFO 7056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:47:07.042  INFO 7056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:47:07.107  INFO 7056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:47:07.107  INFO 7056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 900 ms
+2019-12-18 22:47:07.671  INFO 7056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:47:07.740  INFO 7056 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:47:07.993  INFO 7056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:47:07.995  INFO 7056 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.24 seconds (JVM running for 2.676)
+2019-12-18 22:47:09.999  INFO 7056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:47:09.999  INFO 7056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:47:10.007  INFO 7056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-12-18 22:47:10.025  INFO 7056 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:47:10.028  INFO 7056 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:47:17.653  INFO 7056 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:47:17.654  INFO 7056 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@65386086, com.xian.lebo.pojo.StudentTest@67f8b84b, com.xian.lebo.pojo.StudentTest@51ae21e3, com.xian.lebo.pojo.StudentTest@5343ea5d]
+2019-12-18 22:47:18.552  INFO 7056 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:47:18.552  INFO 7056 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:47:18.570  INFO 7056 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:47:18.570  INFO 7056 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:47:41.260  INFO 1292 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 1292 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:47:41.263  INFO 1292 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:47:42.163  INFO 1292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:47:42.179  INFO 1292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:47:42.179  INFO 1292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:47:42.254  INFO 1292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:47:42.255  INFO 1292 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 915 ms
+2019-12-18 22:47:42.795  INFO 1292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:47:42.863  INFO 1292 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:47:43.130  INFO 1292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:47:43.132  INFO 1292 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.234 seconds (JVM running for 2.642)
+2019-12-18 22:47:50.645  INFO 1292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:47:50.645  INFO 1292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:47:50.663  INFO 1292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-12-18 22:47:50.686  INFO 1292 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:47:50.690  INFO 1292 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:47:54.550  INFO 1292 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:47:54.551  INFO 1292 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@659cf335, com.xian.lebo.pojo.StudentTest@12087bbf, com.xian.lebo.pojo.StudentTest@1b0456d1, com.xian.lebo.pojo.StudentTest@4988ead7]
+2019-12-18 22:47:55.351  INFO 1292 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:47:55.351  INFO 1292 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:47:55.375  INFO 1292 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:47:55.375  INFO 1292 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:48:08.534  INFO 1292 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:48:08.535  INFO 1292 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:48:11.467  INFO 1292 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:48:11.468  INFO 1292 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@14045c47, com.xian.lebo.pojo.StudentTest@58b2828a, com.xian.lebo.pojo.StudentTest@6ae6be05, com.xian.lebo.pojo.StudentTest@2b2746e4]
+2019-12-18 22:48:12.301  INFO 1292 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:48:12.301  INFO 1292 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:48:12.308  INFO 1292 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:48:12.308  INFO 1292 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:49:04.466  INFO 4124 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 4124 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:49:04.468  INFO 4124 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:49:05.351  INFO 4124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:49:05.366  INFO 4124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:49:05.366  INFO 4124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:49:05.438  INFO 4124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:49:05.438  INFO 4124 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 903 ms
+2019-12-18 22:49:05.997  INFO 4124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:49:06.063  INFO 4124 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:49:06.321  INFO 4124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:49:06.323  INFO 4124 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.227 seconds (JVM running for 2.628)
+2019-12-18 22:49:10.056  INFO 4124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:49:10.057  INFO 4124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:49:10.064  INFO 4124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-18 22:49:10.079  INFO 4124 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:49:10.083  INFO 4124 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:49:14.129  INFO 4124 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:49:14.130  INFO 4124 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@659cf335, com.xian.lebo.pojo.StudentTest@12087bbf, com.xian.lebo.pojo.StudentTest@1b0456d1, com.xian.lebo.pojo.StudentTest@4988ead7]
+2019-12-18 22:49:14.902  INFO 4124 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:49:14.902  INFO 4124 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:49:14.926  INFO 4124 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:49:14.926  INFO 4124 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:49:43.624  INFO 6952 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 6952 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:49:43.626  INFO 6952 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:49:44.525  INFO 6952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:49:44.539  INFO 6952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:49:44.539  INFO 6952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:49:44.600  INFO 6952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:49:44.601  INFO 6952 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 891 ms
+2019-12-18 22:49:45.136  INFO 6952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:49:45.206  INFO 6952 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:49:45.456  INFO 6952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:49:45.458  INFO 6952 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.18 seconds (JVM running for 2.58)
+2019-12-18 22:50:22.307  INFO 6952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:50:22.308  INFO 6952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:50:22.317  INFO 6952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-12-18 22:50:22.333  INFO 6952 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:50:22.337  INFO 6952 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:50:26.613  INFO 6952 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[2], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:50:26.614  INFO 6952 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@5e490ac0, com.xian.lebo.pojo.StudentTest@3475814d, com.xian.lebo.pojo.StudentTest@366aec30, com.xian.lebo.pojo.StudentTest@172995da]
+2019-12-18 22:50:27.339  INFO 6952 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:50:27.339  INFO 6952 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:50:27.361  INFO 6952 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:50:27.361  INFO 6952 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:50:38.829  INFO 3452 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 3452 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:50:38.831  INFO 3452 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:50:39.707  INFO 3452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:50:39.723  INFO 3452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:50:39.723  INFO 3452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:50:39.798  INFO 3452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:50:39.798  INFO 3452 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 893 ms
+2019-12-18 22:50:40.337  INFO 3452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:50:40.407  INFO 3452 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:50:40.676  INFO 3452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:50:40.678  INFO 3452 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.193 seconds (JVM running for 2.595)
+2019-12-18 22:50:45.329  INFO 3452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:50:45.329  INFO 3452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:50:45.339  INFO 3452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-12-18 22:50:45.360  INFO 3452 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:50:45.362  INFO 3452 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:50:48.605  INFO 3452 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:50:48.605  INFO 3452 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@948bdb9, com.xian.lebo.pojo.StudentTest@6a623e52, com.xian.lebo.pojo.StudentTest@2ace836, com.xian.lebo.pojo.StudentTest@30ed5141]
+2019-12-18 22:50:52.066  INFO 3452 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:50:52.067  INFO 3452 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:50:52.079  INFO 3452 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:50:52.079  INFO 3452 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:51:22.421  INFO 1724 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 1724 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:51:22.424  INFO 1724 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:51:23.307  INFO 1724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:51:23.323  INFO 1724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:51:23.323  INFO 1724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:51:23.401  INFO 1724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:51:23.401  INFO 1724 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 913 ms
+2019-12-18 22:51:23.941  INFO 1724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:51:24.006  INFO 1724 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:51:24.256  INFO 1724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:51:24.258  INFO 1724 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.189 seconds (JVM running for 2.596)
+2019-12-18 22:51:28.262  INFO 1724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:51:28.262  INFO 1724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:51:28.270  INFO 1724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-12-18 22:51:28.286  INFO 1724 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:51:28.289  INFO 1724 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:51:31.870  INFO 1724 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[2], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:51:31.871  INFO 1724 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@8c553e, com.xian.lebo.pojo.StudentTest@67e2674e, com.xian.lebo.pojo.StudentTest@6f097b67, com.xian.lebo.pojo.StudentTest@79aad7cb]
+2019-12-18 22:51:35.393  INFO 1724 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:51:35.393  INFO 1724 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:51:35.413  INFO 1724 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:51:35.414  INFO 1724 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:52:05.071  INFO 3776 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 3776 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:52:05.074  INFO 3776 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:52:06.039  INFO 3776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:52:06.055  INFO 3776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:52:06.055  INFO 3776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:52:06.121  INFO 3776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:52:06.121  INFO 3776 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 952 ms
+2019-12-18 22:52:06.710  INFO 3776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:52:06.782  INFO 3776 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:52:07.042  INFO 3776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:52:07.045  INFO 3776 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.356 seconds (JVM running for 2.758)
+2019-12-18 22:52:07.072  INFO 3776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:52:07.072  INFO 3776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:52:07.079  INFO 3776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-18 22:52:07.094  INFO 3776 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='127.0.0.1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:52:07.097  INFO 3776 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:52:12.933  INFO 3776 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='127.0.0.1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:52:12.934  INFO 3776 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@654d921d, com.xian.lebo.pojo.StudentTest@cb13240, com.xian.lebo.pojo.StudentTest@277b1b26, com.xian.lebo.pojo.StudentTest@6a02b1f4]
+2019-12-18 22:52:14.572  INFO 3776 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='127.0.0.1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:52:14.572  INFO 3776 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:52:14.584  INFO 3776 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='127.0.0.1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:52:14.585  INFO 3776 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:52:30.516  INFO 1400 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 1400 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:52:30.519  INFO 1400 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:52:31.427  INFO 1400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:52:31.442  INFO 1400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:52:31.442  INFO 1400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:52:31.504  INFO 1400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:52:31.505  INFO 1400 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 920 ms
+2019-12-18 22:52:32.065  INFO 1400 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:52:32.134  INFO 1400 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:52:32.393  INFO 1400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:52:32.395  INFO 1400 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.246 seconds (JVM running for 2.643)
+2019-12-18 22:52:52.316  INFO 1400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:52:52.317  INFO 1400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:52:52.327  INFO 1400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-12-18 22:52:52.349  INFO 1400 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:52:52.353  INFO 1400 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:52:55.913  INFO 1400 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:52:55.914  INFO 1400 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@207c0b2a, com.xian.lebo.pojo.StudentTest@8184807, com.xian.lebo.pojo.StudentTest@4ac58b0e, com.xian.lebo.pojo.StudentTest@1988eedf]
+2019-12-18 22:52:59.484  INFO 1400 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:52:59.485  INFO 1400 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:52:59.497  INFO 1400 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:52:59.497  INFO 1400 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:54:06.932  INFO 4972 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 4972 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:54:06.935  INFO 4972 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:54:07.821  INFO 4972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:54:07.836  INFO 4972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:54:07.837  INFO 4972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:54:07.908  INFO 4972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:54:07.908  INFO 4972 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 910 ms
+2019-12-18 22:54:08.440  INFO 4972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:54:08.506  INFO 4972 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:54:08.752  INFO 4972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:54:08.754  INFO 4972 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.166 seconds (JVM running for 2.59)
+2019-12-18 22:54:13.745  INFO 4972 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:54:13.745  INFO 4972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:54:13.752  INFO 4972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-18 22:54:13.768  INFO 4972 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:54:13.772  INFO 4972 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:54:17.468  INFO 4972 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:54:17.469  INFO 4972 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@3e529017, com.xian.lebo.pojo.StudentTest@f6dd7bd, com.xian.lebo.pojo.StudentTest@6ec6841c, com.xian.lebo.pojo.StudentTest@2ddfa319]
+2019-12-18 22:54:20.514  INFO 4972 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:54:20.514  INFO 4972 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:54:20.536  INFO 4972 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:54:20.536  INFO 4972 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:54:38.920  INFO 6880 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 6880 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 22:54:38.923  INFO 6880 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 22:54:39.807  INFO 6880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 22:54:39.822  INFO 6880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 22:54:39.822  INFO 6880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 22:54:39.894  INFO 6880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 22:54:39.894  INFO 6880 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 890 ms
+2019-12-18 22:54:40.435  INFO 6880 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 22:54:40.506  INFO 6880 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 22:54:40.767  INFO 6880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 22:54:40.769  INFO 6880 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.218 seconds (JVM running for 2.746)
+2019-12-18 22:54:44.965  INFO 6880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 22:54:44.965  INFO 6880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 22:54:44.974  INFO 6880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-12-18 22:54:44.989  INFO 6880 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:54:44.992  INFO 6880 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:55:01.041  INFO 6880 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[2], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:55:01.043  INFO 6880 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@3351fd28, com.xian.lebo.pojo.StudentTest@71bc37f5, com.xian.lebo.pojo.StudentTest@752ec8ab, com.xian.lebo.pojo.StudentTest@71c7d406]
+2019-12-18 22:55:01.119  INFO 6880 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:55:01.119  INFO 6880 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:55:01.140  INFO 6880 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:55:01.140  INFO 6880 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:55:21.273  INFO 6880 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 22:55:21.274  INFO 6880 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 22:55:23.003  INFO 6880 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[2], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:55:23.003  INFO 6880 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@5132ec06, com.xian.lebo.pojo.StudentTest@1ff36fd9, com.xian.lebo.pojo.StudentTest@736509fa, com.xian.lebo.pojo.StudentTest@1017b05c]
+2019-12-18 22:55:23.038  INFO 6880 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:55:23.039  INFO 6880 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:55:23.058  INFO 6880 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 22:55:23.058  INFO 6880 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 22:55:26.571  INFO 6880 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[3], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:55:26.571  INFO 6880 --- [http-nio-8080-exec-7] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@214eb15a, com.xian.lebo.pojo.StudentTest@2f894b03, com.xian.lebo.pojo.StudentTest@2bb6da2a, com.xian.lebo.pojo.StudentTest@6eb44138]
+2019-12-18 22:55:36.718  INFO 6880 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:55:36.718  INFO 6880 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@5be6b991, com.xian.lebo.pojo.StudentTest@5fd92635, com.xian.lebo.pojo.StudentTest@1adbb3aa, com.xian.lebo.pojo.StudentTest@45cf8ed1]
+2019-12-18 22:59:32.559  INFO 6880 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[2], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:59:32.559  INFO 6880 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@7983de29, com.xian.lebo.pojo.StudentTest@31e25118, com.xian.lebo.pojo.StudentTest@7c08d146, com.xian.lebo.pojo.StudentTest@6338418d]
+2019-12-18 22:59:37.521  INFO 6880 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[3], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 22:59:37.521  INFO 6880 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@56032c84, com.xian.lebo.pojo.StudentTest@528a1c3a, com.xian.lebo.pojo.StudentTest@9fbf548, com.xian.lebo.pojo.StudentTest@2443217b]
+2019-12-18 23:00:32.757  INFO 188 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 188 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 23:00:32.757  INFO 188 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 23:00:33.662  INFO 188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 23:00:33.677  INFO 188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 23:00:33.677  INFO 188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 23:00:33.740  INFO 188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 23:00:33.740  INFO 188 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 858 ms
+2019-12-18 23:00:34.286  INFO 188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 23:00:34.364  INFO 188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 23:00:34.598  INFO 188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 23:00:34.598  INFO 188 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.216 seconds (JVM running for 2.641)
+2019-12-18 23:00:38.018  INFO 188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 23:00:38.019  INFO 188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 23:00:38.027  INFO 188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-12-18 23:00:38.042  INFO 188 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 23:00:38.045  INFO 188 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 23:00:39.824  INFO 188 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:00:39.824  INFO 188 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@2ebe76e5, com.xian.lebo.pojo.StudentTest@a0d0bc0, com.xian.lebo.pojo.StudentTest@235842f3, com.xian.lebo.pojo.StudentTest@763b9173]
+2019-12-18 23:00:39.881  INFO 188 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:00:39.881  INFO 188 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:00:39.881  INFO 188 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:00:39.881  INFO 188 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:01:58.833  INFO 1724 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 1724 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 23:01:58.833  INFO 1724 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 23:01:59.753  INFO 1724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 23:01:59.769  INFO 1724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 23:01:59.769  INFO 1724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 23:01:59.831  INFO 1724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 23:01:59.831  INFO 1724 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 904 ms
+2019-12-18 23:02:00.362  INFO 1724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 23:02:00.424  INFO 1724 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 23:02:00.658  INFO 1724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 23:02:00.658  INFO 1724 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.199 seconds (JVM running for 2.611)
+2019-12-18 23:02:03.377  INFO 1724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 23:02:03.378  INFO 1724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 23:02:03.390  INFO 1724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-12-18 23:02:03.406  INFO 1724 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 23:02:03.410  INFO 1724 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 23:02:05.199  INFO 1724 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:05.200  INFO 1724 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@52c94f7a, com.xian.lebo.pojo.StudentTest@55ae0a20, com.xian.lebo.pojo.StudentTest@4f281e8, com.xian.lebo.pojo.StudentTest@7f0dc129]
+2019-12-18 23:02:05.251  INFO 1724 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:02:05.251  INFO 1724 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:02:05.281  INFO 1724 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:02:05.282  INFO 1724 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:02:17.999  INFO 5896 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 5896 (started by xian in C:\Users\xian\Desktop\乐博系统\Lebo)
+2019-12-18 23:02:17.999  INFO 5896 --- [main] com.xian.lebo.LeboApplication            : No active profile set, falling back to default profiles: default
+2019-12-18 23:02:18.940  INFO 5896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-18 23:02:18.955  INFO 5896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 23:02:18.956  INFO 5896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-18 23:02:19.020  INFO 5896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 23:02:19.020  INFO 5896 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 912 ms
+2019-12-18 23:02:19.558  INFO 5896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 23:02:19.629  INFO 5896 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-18 23:02:19.878  INFO 5896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-18 23:02:19.880  INFO 5896 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 2.255 seconds (JVM running for 2.671)
+2019-12-18 23:02:22.242  INFO 5896 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 23:02:22.243  INFO 5896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 23:02:22.256  INFO 5896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-18 23:02:22.272  INFO 5896 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 23:02:22.275  INFO 5896 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 23:02:24.149  INFO 5896 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:24.149  INFO 5896 --- [http-nio-8080-exec-4] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@40e3f4, com.xian.lebo.pojo.StudentTest@53a9bd1a, com.xian.lebo.pojo.StudentTest@789d3321, com.xian.lebo.pojo.StudentTest@6b07ec84]
+2019-12-18 23:02:24.204  INFO 5896 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:02:24.204  INFO 5896 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:02:24.204  INFO 5896 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:02:24.204  INFO 5896 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:02:27.293  INFO 5896 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[2], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:27.293  INFO 5896 --- [http-nio-8080-exec-9] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@42e77386, com.xian.lebo.pojo.StudentTest@4c2085aa, com.xian.lebo.pojo.StudentTest@481f18f6, com.xian.lebo.pojo.StudentTest@d1d8f91]
+2019-12-18 23:02:29.860  INFO 5896 --- [http-nio-8080-exec-10] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[3], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:29.860  INFO 5896 --- [http-nio-8080-exec-10] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@2d9f5780, com.xian.lebo.pojo.StudentTest@2358ac43, com.xian.lebo.pojo.StudentTest@27673cf0, com.xian.lebo.pojo.StudentTest@6265a678]
+2019-12-18 23:02:31.950  INFO 5896 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[0], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:31.950  INFO 5896 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@a4d9b6b, com.xian.lebo.pojo.StudentTest@1d8997ac, com.xian.lebo.pojo.StudentTest@4c5f7678, com.xian.lebo.pojo.StudentTest@372f1e68]
+2019-12-18 23:02:33.183  INFO 5896 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:33.183  INFO 5896 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@4b0fbd88, com.xian.lebo.pojo.StudentTest@1a0bf2d5, com.xian.lebo.pojo.StudentTest@23809d9b, com.xian.lebo.pojo.StudentTest@2d50156e]
+2019-12-18 23:02:35.881  INFO 5896 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='//tostudentUpdateMult2', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.tostudentUpdateMult2'}
+2019-12-18 23:02:35.882  INFO 5896 --- [http-nio-8080-exec-3] com.xian.lebo.aspect.LoggerAspect        : Result:studentUpdateMult2
+2019-12-18 23:02:57.482  INFO 5896 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[1], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:57.482  INFO 5896 --- [http-nio-8080-exec-6] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@73f38fa2, com.xian.lebo.pojo.StudentTest@62b6a6fb, com.xian.lebo.pojo.StudentTest@439fff2d, com.xian.lebo.pojo.StudentTest@7df7a47e]
+2019-12-18 23:02:57.516  INFO 5896 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:02:57.516  INFO 5896 --- [http-nio-8080-exec-8] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:02:57.529  INFO 5896 --- [http-nio-8080-exec-10] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-18 23:02:57.530  INFO 5896 --- [http-nio-8080-exec-10] com.xian.lebo.aspect.LoggerAspect        : Result:login
+2019-12-18 23:02:59.566  INFO 5896 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[2], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:02:59.566  INFO 5896 --- [http-nio-8080-exec-1] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@78724a56, com.xian.lebo.pojo.StudentTest@536f8618, com.xian.lebo.pojo.StudentTest@723b89c, com.xian.lebo.pojo.StudentTest@3e8f83da]
+2019-12-18 23:03:04.656  INFO 5896 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/findByClass', ip='0:0:0:0:0:0:0:1', args=[3], classMethod='com.xian.lebo.controller.UserController.testFindByClass'}
+2019-12-18 23:03:04.656  INFO 5896 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:[com.xian.lebo.pojo.StudentTest@1b050eb1, com.xian.lebo.pojo.StudentTest@5eddda5e, com.xian.lebo.pojo.StudentTest@7996e85b, com.xian.lebo.pojo.StudentTest@54c06962]
