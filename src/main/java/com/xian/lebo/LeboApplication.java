@@ -10,6 +10,7 @@ public class LeboApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(LeboApplication.class, args);
+        //测试
     }
 
 }
