@@ -3926,3 +3926,19 @@ Caused by: java.lang.ClassNotFoundException: com.xian.lebo.pojo.Classes
 2019-12-20 17:28:52.485 DEBUG 5208 --- [http-nio-8080-exec-5] c.x.l.mapper.ClassesMapper.getClasses    : ==> Parameters: 5(Integer)
 2019-12-20 17:28:52.487 DEBUG 5208 --- [http-nio-8080-exec-5] c.x.l.mapper.ClassesMapper.getClasses    : <==      Total: 5
 2019-12-20 17:28:52.487  INFO 5208 --- [http-nio-8080-exec-5] com.xian.lebo.aspect.LoggerAspect        : Result:classesShow
+2019-12-21 11:59:07.968  INFO 4948 --- [main] com.xian.lebo.LeboApplication            : Starting LeboApplication on xian-PC with PID 4948 (E:\ideaProject\javaSe\test\LeBo\target\classes started by xian in E:\ideaProject\javaSe\test\LeBo)
+2019-12-21 11:59:07.970  INFO 4948 --- [main] com.xian.lebo.LeboApplication            : The following profiles are active: dev
+2019-12-21 11:59:09.992  INFO 4948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-21 11:59:10.040  INFO 4948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-21 11:59:10.041  INFO 4948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-21 11:59:10.261  INFO 4948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-21 11:59:10.261  INFO 4948 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2238 ms
+2019-12-21 11:59:11.294  INFO 4948 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-21 11:59:11.380  INFO 4948 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-21 11:59:11.754  INFO 4948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-21 11:59:11.756  INFO 4948 --- [main] com.xian.lebo.LeboApplication            : Started LeboApplication in 4.504 seconds (JVM running for 5.467)
+2019-12-21 11:59:21.949  INFO 4948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-21 11:59:21.950  INFO 4948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-21 11:59:21.964  INFO 4948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-12-21 11:59:22.019  INFO 4948 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:RequestLog{uri='/login', ip='0:0:0:0:0:0:0:1', args=[], classMethod='com.xian.lebo.controller.UserController.toLogin'}
+2019-12-21 11:59:22.022  INFO 4948 --- [http-nio-8080-exec-2] com.xian.lebo.aspect.LoggerAspect        : Result:login
